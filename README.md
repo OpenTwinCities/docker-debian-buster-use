@@ -1,39 +1,17 @@
 # Using Debian Buster Docker Images
 
-Welcome to my repository for using my Docker images based on Debian Buster.
+Welcome to the OpenTwinCities repository for using Docker images based on Debian Buster.
 
 ## Prerequisites
-* Git and Docker should be installed.
-* /bin/sh should point to Bash instead of Dash.  If you installed Docker with the procedure in my [Different Docker Tutorial](https://www.differentdockertutorial.com/), this step is automatically taken care of for you.  If you did not install Docker in this manner, enter the following commands:
-
-```
-sudo rm /bin/sh
-sudo ln -s /bin/bash /bin/sh
-```
+Go to https://gitlab.com/rubyonracetracks/docker-debian-buster-use for more details.
 
 ## Other Notes
-* When you start the Rails server from an app in your Docker container, enter the command "rails s -b 0.0.0.0". The "-b 0.0.0.0" is ESSENTIAL for viewing your app from the web browser on your host machine. If you simply enter "rails s" or "rails server", you will NOT be able to view your app from the web browser on your host machine.
-* Viewing PostgreSQL data on the host machine with pgAdmin requires that the Docker container's PostgreSQL setup be configured to provide output to the IP address 0.0.0.0.  Docker images are preconfigured to take care of this.
-* PostgreSQL and other servers are dormant until you or a script acts to start them.  Remember that because there is no virtual machine to boot up, no mechanism is provided to automatically turn on servers.
-* PAY ATTENTION to the port numbers when you use your web browser or pgAdmin to view your apps. No two apps may share the same port number, and this is why you are asked to enter a port offset when you run the script for getting started with a Docker image.  As a result, the port number to use in your web browser will NOT always be 3000, and the port number to use in pgAdmin will NOT always be 5432 or 15432. The use of different port numbers for different Docker images allows you to work on multiple projects simultaneously.
+Go to https://gitlab.com/rubyonracetracks/docker-debian-buster-use for more details.
 
 ## Using Docker Images
-* The scripts for using the Docker images listed below select the appropriate Docker image for your purpose.  Just enter "sh (script name)", and then follow the instructions printed on the screen.  For example, enter "sh rbenv-rails-general.sh" to use the Docker image for Ruby on Rails with rbenv.
-* The scripts in the main directory of this repository create a folder full of scripts customized for using a specific Docker image.
-* The download_new_image.sh script removes the Docker image from your local machine (if it's there), downloads the Docker image from Docker Hub, and starts up a Docker container based on this Docker image.  Any changes you made to the Docker container previously are undone.
-* The reset.sh script keeps the Docker image on your local machine (assuming it's there) and starts up a Docker container based on this Docker image.  Any changes you made to the Docker container previously are undone.
-* After you exit a Docker container, you can run the resume.sh to start up the Docker container in the same state in which you left it.
+Go to https://gitlab.com/rubyonracetracks/docker-debian-buster-use for more details.
 
-## Javascript Docker images
+## Docker Images Available
 | Script | Docker Image | Comments |
 |--------|--------------|----------|
-| js-react.sh | [debian-buster-min-stage2](https://gitlab.com/rubyonracetracks/docker-debian-buster-min-stage2) | Uses the min-stage2 app; Docker container designed for working on React apps |
-| js-docusaurus.sh | [debian-buster-min-stage2](https://gitlab.com/rubyonracetracks/docker-debian-buster-min-stage2) | Uses the min-stage2 app; Docker container designed for working on Docusaurus apps |
-
-## Other Docker Scripts
-| Script | Docker Image | Comments |
-|--------|--------------|----------|
-| min-stage1.sh | [debian-buster-min-stage1](https://gitlab.com/rubyonracetracks/docker-debian-buster-min-stage1) | Building block for downstream images |
-| min-stage2.sh | [debian-buster-min-stage2](https://gitlab.com/rubyonracetracks/docker-debian-buster-min-stage2) | Building block for downstream images and for working on Javascript apps |
-| min-rbenv.sh | [debian-buster-min-rbenv](https://gitlab.com/rubyonracetracks/docker-debian-buster-min-rbenv) | Building block for downstream images |
-| rbenv-rails-general.sh | [debian-buster-rbenv-rails-general](https://gitlab.com/rubyonracetracks/docker-debian-buster-rbenv-rails-general) | For Rails Tutorial and for creating new Rails apps and Ruby gems |
+[debian-buster-rbenv-rails-adoptatree](https://github.com/OpenTwinCities/docker-debian-buster-rbenv-rails-adoptatree) | For working on Adopt-A-Tree |
