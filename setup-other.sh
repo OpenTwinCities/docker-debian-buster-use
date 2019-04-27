@@ -61,6 +61,8 @@ git clone https://gitlab.com/rubyonracetracks/docker-debian-buster-use.git
 cp docker-debian-buster-use/setup.sh setup.sh
 cp -r docker-debian-buster-use/templates_shared templates_shared
 cp -r docker-debian-buster-use/templates_use templates_use
+wait
+remove_dir 'docker-debian-buster-use'
 
 ###################################################
 # FINISHED: acquiring the scripts from the upstream 
