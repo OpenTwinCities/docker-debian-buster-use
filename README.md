@@ -14,4 +14,4 @@ Go to https://gitlab.com/rubyonracetracks/docker-debian-buster-use for more deta
 ## Docker Images Available
 | Script | Docker Image | Comments |
 |--------|--------------|----------|
-[debian-buster-rbenv-rails-adoptatree](https://github.com/OpenTwinCities/docker-debian-buster-rbenv-rails-adoptatree) | For working on Adopt-A-Tree |
+| rbenv-rails-adoptatree.sh | [debian-buster-rbenv-rails-adoptatree](https://github.com/OpenTwinCities/docker-debian-buster-rbenv-rails-adoptatree) | For working on Adopt-A-Tree |
