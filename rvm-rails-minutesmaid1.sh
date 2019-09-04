@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ABBREV='rbenv-rails-adoptatree'
+ABBREV='rvm-rails-minutesmaid1'
 OWNER='opentwincities'
 DISTRO='debian'
 SUITE='buster'

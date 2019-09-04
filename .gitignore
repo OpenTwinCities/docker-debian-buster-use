@@ -1,5 +1,5 @@
 .DS_Store
-rbenv-rails-*/*
+rvm-rails-*/*
 
 docker-debian-buster-use
 templates_shared
